@@ -1,8 +1,29 @@
-# OS metadata files
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Next.js build outputs
+.next/
+out/
+build/
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# Environment & Secrets (NEVER commit real tokens)
+.env
+.env*.local
+.env.development
+.env.production
+
+# OS & IDE metadata
 .DS_Store
 Thumbs.db
 *.tmp
-node_modules/
+.idea/
+.vscode/
 
-dist/
-tsconfig.tsbuildinfo
+# Local AI skills / caches
+.agents/
+skills-lock.json
+*.log
