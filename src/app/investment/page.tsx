@@ -9,15 +9,38 @@ import Footer from '@/app/components/Footer';
 
 export default function Investment() {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     fullName: '',
     phone: '',
     email: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSubmitted(true);
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.fullName,
+          phone: formData.phone,
+          email: formData.email,
+          source: 'investment',
+        }),
+      });
+      if (!res.ok) throw new Error('Submission failed');
+      setFormSubmitted(true);
+    } catch (err) {
+      console.error('Investment form submission error:', err);
+      setError('Something went wrong. Please call or WhatsApp us directly.');
+    }
+
+    setSubmitting(false);
   };
 
   return (
@@ -35,7 +58,7 @@ export default function Investment() {
           justifyContent: 'center',
           padding: '120px 20px 80px',
           overflow: 'hidden',
-          backgroundColor: '#0E1A12',
+          backgroundColor: '#122217',
         }}
       >
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
@@ -51,7 +74,7 @@ export default function Investment() {
               position: 'absolute',
               inset: 0,
               background:
-                'linear-gradient(180deg, rgba(14, 26, 18, 0.72) 0%, rgba(14, 26, 18, 0.88) 60%, #0E1A12 100%)',
+                'linear-gradient(180deg, rgba(18, 34, 23, 0.72) 0%, rgba(18, 34, 23, 0.88) 60%, #122217 100%)',
             }}
           />
         </div>
@@ -215,7 +238,7 @@ export default function Investment() {
       {/* Quote Banner */}
       <section
         style={{
-          background: 'linear-gradient(135deg, #16261B 0%, #122217 100%)',
+          background: 'linear-gradient(135deg, #122217 0%, #1A2E20 100%)',
           color: '#FFFFFF',
           padding: '60px 20px',
           borderTop: '1px solid rgba(198, 162, 101, 0.25)',
@@ -1343,6 +1366,22 @@ export default function Investment() {
                     </p>
                   </div>
 
+                  {error && (
+                    <p
+                      style={{
+                        margin: '0 0 20px',
+                        padding: '12px 16px',
+                        borderRadius: '10px',
+                        background: 'rgba(200, 60, 60, 0.08)',
+                        border: '1px solid rgba(200, 60, 60, 0.25)',
+                        color: '#8A3030',
+                        fontSize: '0.88rem',
+                      }}
+                    >
+                      {error}
+                    </p>
+                  )}
+
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
                     {/* Full Name */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -1484,6 +1523,7 @@ export default function Investment() {
 
                     <button
                       type="submit"
+                      disabled={submitting}
                       style={{
                         width: '100%',
                         minHeight: '56px',
@@ -1515,7 +1555,7 @@ export default function Investment() {
                         e.currentTarget.style.boxShadow = '0 12px 26px rgba(114, 53, 28, 0.25)';
                       }}
                     >
-                      REQUEST AN INVESTMENT DISCUSSION →
+                      {submitting ? 'SENDING...' : 'REQUEST AN INVESTMENT DISCUSSION →'}
                     </button>
 
                     <p
@@ -1540,7 +1580,7 @@ export default function Investment() {
       {/* Disclaimers & Sources Section */}
       <section
         style={{
-          backgroundColor: '#0E1A12',
+          backgroundColor: '#122217',
           color: '#95A599',
           padding: '50px 20px 70px',
           borderTop: '1px solid rgba(255, 255, 255, 0.08)',

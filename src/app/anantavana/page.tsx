@@ -1776,10 +1776,10 @@ export default function Anantavana() {
                 textWrap: "balance",
               }}
             >
-              Surrounded by wilderness.
+              Beautifully located.
               <br />
               <span style={{ color: "#987443", fontStyle: "italic", fontWeight: 400 }}>
-                Connected to comfort.
+                Conveniently connected
               </span>
             </h2>
           </motion.div>

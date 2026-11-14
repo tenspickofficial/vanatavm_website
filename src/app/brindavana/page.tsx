@@ -572,7 +572,7 @@ export default function Brindavana() {
                 </motion.div>
               </div>
               <div className="ishavana-idea-copy">
-                <Kicker>The Brindavana Story</Kicker>
+                <Kicker>The BrindaVana Story</Kicker> 
                 <Words
                   text="Brindavana — A Journey of Persistence"
                   style={{
@@ -822,7 +822,7 @@ export default function Brindavana() {
                   num: "03 /",
                   title: "Strategic Locations",
                   subtitle: "Strategic Connectivity. Promising Growth. Limitless Potential.",
-                  desc: "Strategically positioned amid the industrial growth of Madakasira, the automobile hub of Penukonda, and the thriving commercial centre of Hindupur, Pavagada is emerging as a promising destination for the future..",
+                  desc: "Strategically positioned amid the industrial growth of Madakasira, the automobile hub of Penukonda, and the thriving commercial centre of Hindupur, Pavagada is emerging as a promising destination for the future.",
                   icon: MapPin,
                 },
                 {
@@ -1406,10 +1406,10 @@ export default function Brindavana() {
                   textWrap: "balance",
                 }}
               >
-                Surrounded by wilderness.
+                Beautifully located.
                 <br />
                 <span style={{ color: "#987443", fontStyle: "italic", fontWeight: 400 }}>
-                  Connected to comfort.
+                  Conveniently connected
                 </span>
               </h2>
             </motion.div>
@@ -1696,7 +1696,7 @@ export default function Brindavana() {
                     fontWeight: 400,
                   }}
                 >
-                  Brindavana.
+                  BrindaVana.
                 </span>
                 <br />A place to belong.
               </h2>
@@ -1750,7 +1750,7 @@ export default function Brindavana() {
                       color: "#183023",
                     }}
                   >
-                    Brindavana at Pavagada
+                    BrindaVana at Pavagada
                   </div>
                   <div
                     style={{

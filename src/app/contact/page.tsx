@@ -401,7 +401,7 @@ export default function Contact() {
                       margin: "0 0 28px",
                     }}
                   >
-                    Our team welcomes you to meet in person to discuss managed farmland opportunities, review legal title reports, and plan your site inspection.
+                    Our team welcomes you to meet in person, understand the vision behind our natural farm communities, explore the project details and clarify your questions. We can also help plan a guided site visit so you can experience the land firsthand.
                   </p>
 
                   <div
@@ -508,7 +508,7 @@ export default function Contact() {
                 >
                   <iframe
                     title="Google Maps showing VanaTvam Head Office in Girinagar Bengaluru"
-                    src="https://www.google.com/maps?q=12.9427,77.5453&z=15&output=embed"
+                    src="https://www.google.com/maps?q=12.9410767,77.5454691&z=17&output=embed"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     style={{
@@ -544,7 +544,7 @@ export default function Contact() {
                       </span>
                     </div>
                     <a
-                      href="https://share.google/ec2cCHbHzzQrqMV6I"
+                      href="https://www.google.com/maps?q=12.9410767,77.5454691&z=17"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-pill btn-pill-gold"
@@ -953,9 +953,9 @@ export default function Contact() {
                 },
                 {
                   number: "04",
-                  question: "Are legal documents and title reports available during the visit?",
+                  question: "Are legal documents and title reports provided for verification?",
                   answer:
-                    "Yes, legal title documents, mother deeds, RTC records, and survey sketches are available for verification at our head office.",
+                    "Yes. Upon receipt of the booking advance, we will share the relevant legal title documents, mother deeds, RTC records, survey sketches and other property-related records for your verification.",
                 },
               ].map((faq, idx) => (
                 <motion.details

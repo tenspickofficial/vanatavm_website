@@ -1014,7 +1014,7 @@ export default function Madhuvana() {
                 title="Common Amenities (A – G)"
                 items={[
                   { id: "kitchen-dining", name: "A-Entrance", img: "/assets/project-images/Maduvana/Rustic Tropical Garden Gateway.webp" },
-                  { id: "ashoka-vana", name: "B-Childrens Pool", img: "/assets/project-images/Maduvana/Tropical Garden Pond Oasis.webp" },
+                  { id: "ashoka-vana", name: "B-Children's Pool", img: "/assets/project-images/Maduvana/Tropical Garden Pond Oasis.webp" },
                   { id: "event-space", name: "C-Vinayaka Vana", img: "/assets/project-images/Maduvana/Aerial Spiral Garden in Bloom.webp" },
                   { id: "gateway", name: "D-Gazebo", img: "/assets/project-images/Maduvana/gazebo.jpeg" },
                   { id: "tree-house", name: "E-Tree House Deck", img: "/assets/project-images/Maduvana/MV Tree House.webp" },
@@ -1444,10 +1444,10 @@ export default function Madhuvana() {
                   textWrap: "balance",
                 }}
               >
-                Surrounded by wilderness.
+                Beautifully located.
                 <br />
                 <span style={{ color: "#987443", fontStyle: "italic", fontWeight: 400 }}>
-                  Connected to comfort.
+                  Conveniently connected
                 </span>
               </h2>
             </motion.div>
