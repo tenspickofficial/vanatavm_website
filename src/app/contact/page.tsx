@@ -122,6 +122,7 @@ export default function Contact() {
   const reduce = useReducedMotion() ?? false;
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const enter = (delay: number, duration = 0.8) =>
     reduce ? { duration: 0 } : { duration, delay, ease: EASE };
@@ -130,6 +131,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
+    setError(null);
 
     const formData = new FormData(e.currentTarget);
     const data = {
@@ -139,20 +141,23 @@ export default function Contact() {
       project: formData.get("project"),
       date: formData.get("date"),
       message: formData.get("message"),
+      source: "contact",
     };
 
     try {
-      await fetch("/api/contact", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
+      if (!res.ok) throw new Error("Submission failed");
+      setSubmitted(true);
     } catch (err) {
       console.error("Form submission error:", err);
+      setError("Something went wrong. Please call or WhatsApp us directly.");
     }
 
     setSubmitting(false);
-    setSubmitted(true);
   };
 
   return (
@@ -653,6 +658,22 @@ export default function Contact() {
                       </p>
                     </div>
                   ) : (
+                    <>
+                    {error && (
+                      <p
+                        style={{
+                          margin: "0 0 16px",
+                          padding: "12px 16px",
+                          borderRadius: "10px",
+                          background: "rgba(200, 60, 60, 0.08)",
+                          border: "1px solid rgba(200, 60, 60, 0.25)",
+                          color: "#8A3030",
+                          fontSize: "0.88rem",
+                        }}
+                      >
+                        {error}
+                      </p>
+                    )}
                     <div
                       style={{
                         display: "flex",
@@ -866,6 +887,7 @@ export default function Contact() {
                         Your details are private and will only be used to answer your inquiry.
                       </p>
                     </div>
+                    </>
                   )}
                 </form>
               </motion.div>

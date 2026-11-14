@@ -31,14 +31,16 @@ export default function BrochureModal({
       email: formData.get("email"),
       project: formData.get("project") || projectName,
       message: `Requested ${projectName} Brochure download.`,
+      source: "brochure",
     };
 
     try {
-      await fetch("/api/contact", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
+      if (!res.ok) throw new Error("Lead save failed");
     } catch (err) {
       console.error("Failed to record lead:", err);
     }

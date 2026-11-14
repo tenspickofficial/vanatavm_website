@@ -1,10 +1,47 @@
 'use client';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
 import RevealText from '@/components/premium/RevealText';
 
 export default function BookAVisit() {
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError(null);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      phone: formData.get('phone'),
+      email: formData.get('email'),
+      project: formData.get('project'),
+      message: formData.get('message'),
+      source: 'book-a-visit',
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error('Submission failed');
+      setSubmitted(true);
+      e.currentTarget.reset();
+    } catch (err) {
+      console.error('Visit request submission error:', err);
+      setError('Something went wrong. Please call or WhatsApp us directly.');
+    }
+
+    setSubmitting(false);
+  };
+
   const fadeIn = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
@@ -51,24 +88,49 @@ export default function BookAVisit() {
               <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)' }}>Select your preferred community and our team will coordinate the perfect date for your guided ecological tour.</p>
             </div>
 
-            <form>
+            {submitted ? (
+              <div style={{ textAlign: 'center', padding: '20px 0' }}>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', color: 'var(--bg-dark-forest)', margin: '0 0 10px' }}>
+                  Thank You!
+                </h3>
+                <p style={{ color: 'var(--text-muted)', margin: 0, lineHeight: 1.7 }}>
+                  Your visit request has been received. Our team will contact you shortly to confirm the details.
+                </p>
+              </div>
+            ) : (
+            <form onSubmit={handleSubmit}>
+              {error && (
+                <p
+                  style={{
+                    margin: '0 0 20px',
+                    padding: '12px 16px',
+                    borderRadius: '10px',
+                    background: 'rgba(200, 60, 60, 0.08)',
+                    border: '1px solid rgba(200, 60, 60, 0.25)',
+                    color: '#8A3030',
+                    fontSize: '0.88rem',
+                  }}
+                >
+                  {error}
+                </p>
+              )}
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px', marginBottom: '25px' }}>
                 <div className="form-group" style={{ marginBottom: 0 }}>
                   <label>Full Name</label>
-                  <input type="text" className="form-control" placeholder="Enter your full name" required />
+                  <input type="text" name="name" className="form-control" placeholder="Enter your full name" required />
                 </div>
                 <div className="form-group" style={{ marginBottom: 0 }}>
                   <label>Phone Number</label>
-                  <input type="tel" className="form-control" placeholder="+91 98765 43210" required />
+                  <input type="tel" name="phone" className="form-control" placeholder="+91 98765 43210" required />
                 </div>
               </div>
               <div className="form-group" style={{ marginBottom: '25px' }}>
                 <label>Email Address</label>
-                <input type="email" className="form-control" placeholder="yourname@domain.com" required />
+                <input type="email" name="email" className="form-control" placeholder="yourname@domain.com" required />
               </div>
               <div className="form-group" style={{ marginBottom: '25px' }}>
                 <label>Preferred Community</label>
-                <select className="form-control" defaultValue="">
+                <select name="project" className="form-control" defaultValue="">
                   <option value="" disabled>Select a location...</option>
                   <option value="brindavana">Brindavana (Pavagada · 30 Acres · Completed)</option>
                   <option value="madhuvana">Madhuvana (Maddur · 17 Acres · Water Forest)</option>
@@ -78,10 +140,13 @@ export default function BookAVisit() {
               </div>
               <div className="form-group" style={{ marginBottom: '35px' }}>
                 <label>Preferred Date / Additional Notes</label>
-                <textarea className="form-control" rows={4} placeholder="When would you like to visit? Any specific requirements?"></textarea>
+                <textarea name="message" className="form-control" rows={4} placeholder="When would you like to visit? Any specific requirements?"></textarea>
               </div>
-              <button type="submit" className="btn-pill btn-pill-dark" style={{ width: '100%', justifyContent: 'center', fontSize: '1.1rem', padding: '16px' }}>Submit Visit Request</button>
+              <button type="submit" disabled={submitting} className="btn-pill btn-pill-dark" style={{ width: '100%', justifyContent: 'center', fontSize: '1.1rem', padding: '16px' }}>
+                {submitting ? 'Submitting...' : 'Submit Visit Request'}
+              </button>
             </form>
+            )}
           </motion.div>
         </div>
       </section>
