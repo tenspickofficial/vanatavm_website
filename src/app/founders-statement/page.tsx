@@ -217,7 +217,7 @@ const PROJECTS = [
     id: "ishavana",
     category: "riverfront",
     name: "ISHAVANA",
-    logo: "/assets/images/Project-Logos/eeshavanaalogo.webp",
+    logo: "/assets/images/Project-Logos/Ishavaanalogo.png",
     location: "KOLLEGALA · CAUVERY RIVERFRONT",
     desc: "A riverfront community along the sacred Kaveri, designed around the relationship between people, riparian ecology, and water.",
     img: "/assets/project-images/Esahavana/EV%20Image.webp",

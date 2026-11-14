@@ -65,7 +65,7 @@ export default function Projects() {
       id: 'ishavana',
       category: 'riverfront',
       name: 'ISHAVANA',
-      logo: '/assets/images/Project-Logos/eeshavanaalogo.webp',
+      logo: '/assets/images/Project-Logos/Ishavaanalogo.png',
       location: 'KOLLEGALA - 10 Acres',
       desc: 'Our premier riverfront community set along the banks of the sacred Kaveri river. Designed around the deep relationship between people, riparian ecology, and water.',
       img: '/assets/project-images/Esahavana/EV.webp',
