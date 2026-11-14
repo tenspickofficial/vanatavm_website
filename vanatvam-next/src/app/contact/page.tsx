@@ -407,7 +407,7 @@ export default function Contact() {
                   </p>
                 </div>
                 <a
-                  href="https://share.google/ec2cCHbHzzQrqMV6I"
+                  href="https://maps.app.goo.gl/Lu2Ephm15aefuVmu9"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -787,7 +787,7 @@ export default function Contact() {
                       </span>
                     </div>
                     <a
-                      href="https://share.google/ec2cCHbHzzQrqMV6I"
+                      href="https://maps.app.goo.gl/Lu2Ephm15aefuVmu9"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-pill btn-pill-gold"

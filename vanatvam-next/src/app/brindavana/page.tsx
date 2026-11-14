@@ -1761,7 +1761,7 @@ export default function Brindavana() {
                   margin: "0 0 36px",
                 }}
               >
-                Discover 30 acres of sustainable managed farmland in Pavagada. Nurture your connection with nature through native tree canopies, organic agroforestry, sacred groves, and a conscious community. Schedule a site visit or connect with our team to explore available farmland plots.
+                Discover 30 acres of sustainable managed farmland in Pavagada. Nurture your connection with nature through native tree canopies, organic agroforestry and a conscious community. Schedule a site visit or connect with our team to explore available farmland plots.
               </p>
 
               {/* Decorative signature */}

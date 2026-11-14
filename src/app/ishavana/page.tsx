@@ -665,7 +665,7 @@ export default function Ishavana() {
                 
                  <Reveal delay={0.1}>
                    <p style={{ margin: 0 }}>
-                     Nestled along the sacred Kaveri river in Dhanagere, Kollegala Taluk, Ishavana is envisioned as a nature-first community where architecture listens to the land, landscapes remain alive, and every home enjoys the calm rhythm of rural Karnataka.
+                     Nestled along the sacred Kaveri river in Dhanagere, near the magnificent Shivanasamudra Falls, Ishavana (aka Eeshavana)  is envisioned as a nature-first community where architecture listens to the land, landscapes remain alive, and every home enjoys the calm rhythm of rural Karnataka.
                    </p>
                  </Reveal>
                  <Reveal delay={0.2}>
@@ -842,7 +842,7 @@ export default function Ishavana() {
                   num: "01 /",
                   title: "Strategic  Locations",
                   subtitle: "Along the Bangalore–Mysore-Chamarajnagar Corridor",
-                  desc: "Discover premium riverside farmland plots by the Kaver River, surrounded by the natural beauty and tranquillity of Karnataka..",
+                  desc: "Discover premium riverside farmland plots by the Kaveri River, surrounded by the natural beauty and tranquillity of Karnataka.",
                   icon: MapPin,
                 },
                 {
@@ -1825,7 +1825,7 @@ export default function Ishavana() {
                 margin: "0 0 36px",
               }}
             >
-           Discover 12 exclusive riverfront farm plots along the serene Kaveri River near Kollegala. Build your retreat surrounded by native greenery, riverside walkways, bio-pool, and a conscious community. Schedule a site visit or connect with our team to learn more.            </p>
+           Discover 12 exclusive riverfront farm plots along the serene Kaveri River near Shivanasamudra. Build your retreat surrounded by native greenery, riverside walkways, bio-pool, and a conscious community. Schedule a site visit or connect with our team to learn more.            </p>
 
             {/* Decorative signature */}
             <div
@@ -2299,9 +2299,9 @@ export default function Ishavana() {
               },
               {
                 number: "02",
-                question: "What is Ishavana at Kollegala?",
+                question: "What is Ishavana at Dhanagere?",
                 answer:
-                  "Ishavana is a premium riverfront farm community by Vanatvam, set along the banks of the Kaveri River near Kollegala. It is envisioned as a low-density retreat that brings together private farm plots, planned common spaces, bio-pool, and direct Kaveri frontage for those seeking a quiet escape in nature.",
+                  "Ishavana is a premium riverfront farm community by Vanatvam, set along the banks of the Kaveri River near Shivanasamudra. It is envisioned as a low-density retreat that brings together private farm plots, planned common spaces, bio-pool, and direct Kaveri frontage for those seeking a quiet escape in nature.",
               },
           
 {
