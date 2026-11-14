@@ -27,3 +27,6 @@ Thumbs.db
 .agents/
 skills-lock.json
 *.log
+
+vanatvam-next/dist/
+dist/
