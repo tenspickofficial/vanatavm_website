@@ -411,8 +411,8 @@ export default function BrochureModal({
                       <option value="Brindavana">
                         Brindavana (Pavagada · 30 Acres)
                       </option>
-                      <option value="Eeshavana">
-                        Eeshavana (Kaveri Riverfront)
+                      <option value="Ishavana">
+                        Ishavana (Kaveri Riverfront)
                       </option>
                     </select>
                   </div>

@@ -11,7 +11,7 @@ import StickyMasterPlanGallery from "@/components/premium/StickyMasterPlanGaller
 import { ArrowRight, ArrowUpRight, Droplets, Leaf, MapPin, Mountain, PawPrint, ShieldCheck, Ship, Sparkles, Trees, Users, Waves, Sprout } from "lucide-react";
 
 const EASE = [0.2, 0.9, 0.2, 1] as const;
-const TITLE = "EESHAVANA";
+const TITLE = "ISHAVANA";
 const GOLD = "var(--accent-gold)";
 const FOREST = "#122217";
 
@@ -345,7 +345,7 @@ const stats = [
 const galleryImages = [
   {
     src: "/assets/project-images/Esahavana/EV River View 1.webp",
-    alt: "River landscape near Eeshavana",
+    alt: "River landscape near Ishavana",
   },
   {
     src: "/assets/project-images/Esahavana/EV River View 2.webp",
@@ -353,15 +353,15 @@ const galleryImages = [
   },
   {
     src: "/assets/project-images/Esahavana/EV Arial View 1.webp",
-    alt: "Eeshavana riverfront concept visual",
+    alt: "Ishavana riverfront concept visual",
   },
   {
     src: "/assets/project-images/Esahavana/EV Arial View 4.webp",
-    alt: "Eeshavana riverfront aerial view",
+    alt: "Ishavana riverfront aerial view",
   },
 ];
 
-export default function Eeshavana() {
+export default function Ishavana() {
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
   const reduce = useReducedMotion() ?? false;
   const enter = (delay: number, duration = 0.8) =>
@@ -371,7 +371,7 @@ export default function Eeshavana() {
   return (
     <>
       <Navigation />
-      <main className="eeshavana-page">
+      <main className="ishavana-page">
         {/* ================= HERO ================= */}
         <section
           className="hero"
@@ -388,7 +388,7 @@ export default function Eeshavana() {
           <div className="hero-bg-wrapper" style={{ position: "absolute", inset: 0 }}>
             <motion.img
               src="/assets/project-images/Esahavana/EV.webp"
-              alt="EESHAVANA"
+              alt="ISHAVANA"
               initial={{ scale: 1 }}
               animate={{ scale: 1.08 }}
               transition={{ duration: 6.5, ease: "linear" }}
@@ -570,7 +570,7 @@ export default function Eeshavana() {
              width: "100%",
            }}
          >
-           <div className="eeshavana-idea" style={{ gap: "clamp(16px, 2.5vw, 32px)", width: "100%" }}>
+           <div className="ishavana-idea" style={{ gap: "clamp(16px, 2.5vw, 32px)", width: "100%" }}>
              <div style={{ position: "relative", width: "100%", maxWidth: "100%" }}>
                <motion.div
                  initial={reduce ? false : { opacity: 0, y: 30 }}
@@ -592,8 +592,8 @@ export default function Eeshavana() {
                    loading="lazy"
                    style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                  />
-                 <span className="eeshavana-image-caption">
-                   The Eeshavana idea
+                 <span className="ishavana-image-caption">
+                   The Ishavana idea
                  </span>
                </motion.div>
 
@@ -640,7 +640,7 @@ export default function Eeshavana() {
                  </span>
                </motion.div>
              </div>
-             <div className="eeshavana-idea-copy">
+             <div className="ishavana-idea-copy">
                <Kicker>A premium Kaveri riverfront farm community by Vanatvam</Kicker>
                <Words
                  text="Where the river becomes part of everyday life"
@@ -665,28 +665,28 @@ export default function Eeshavana() {
                 
                  <Reveal delay={0.1}>
                    <p style={{ margin: 0 }}>
-                     Nestled along the sacred Kaveri river in Dhanagere, Kollegala Taluk, Eeshavana is envisioned as a nature-first community where architecture listens to the land, landscapes remain alive, and every home enjoys the calm rhythm of rural Karnataka.
+                     Nestled along the sacred Kaveri river in Dhanagere, Kollegala Taluk, Ishavana is envisioned as a nature-first community where architecture listens to the land, landscapes remain alive, and every home enjoys the calm rhythm of rural Karnataka.
                    </p>
                  </Reveal>
                  <Reveal delay={0.2}>
                    <p style={{ margin: 0 }}>
-                     Inspired by the philosophy of living with nature, Eeshavana brings together river, trees, open skies, and thoughtfully designed community spaces. The architectural vision emphasizes organic forms, natural materials, native vegetation, and experiences that deepen one&apos;s connection with the land and water.
+                     Inspired by the philosophy of living with nature, Ishavana brings together river, trees, open skies, and thoughtfully designed community spaces. The architectural vision emphasizes organic forms, natural materials, native vegetation, and experiences that deepen one&apos;s connection with the land and water.
                    </p>
                  </Reveal>
                  <Reveal delay={0.3}>
                    <p style={{ margin: 0 }}>
-                     The Kaveri is more than a river. It is part of the cultural, ecological, and historical identity of Karnataka. At Eeshavana, the river is not a distant view — it is a living presence. Its changing reflections, cool breeze, birdsong, and seasonal moods become part of everyday life. Beyond the river stretch coconut groves, native vegetation, and fertile agricultural landscapes that give this place its unmistakable rural character. Eeshavana has been conceived to preserve and enhance this natural setting rather than compete with it.
+                     The Kaveri is more than a river. It is part of the cultural, ecological, and historical identity of Karnataka. At Ishavana, the river is not a distant view — it is a living presence. Its changing reflections, cool breeze, birdsong, and seasonal moods become part of everyday life. Beyond the river stretch coconut groves, native vegetation, and fertile agricultural landscapes that give this place its unmistakable rural character. Ishavana has been conceived to preserve and enhance this natural setting rather than compete with it.
                    </p>
                  </Reveal>
                </div>
-               <div className="eeshavana-pills" style={{ marginTop: "24px" }}>
+               <div className="ishavana-pills" style={{ marginTop: "24px" }}>
                  {[
                    "Sacred Kaveri Riverfront",
                    "close to shivanasamudra",
                    "Nature-First Architecture",
                  ].map((item, index) => (
                    <Reveal key={item} delay={0.12 + index * 0.06}>
-                     <span className="eeshavana-pill">{item}</span>
+                     <span className="ishavana-pill">{item}</span>
                    </Reveal>
                  ))}
                </div>
@@ -1001,7 +1001,7 @@ export default function Eeshavana() {
   <p
     style={{
       fontSize: "1.1rem",
-      color: "var(--eeshavana-muted, #687b63)",
+      color: "var(--ishavana-muted, #687b63)",
       maxWidth: "720px",
       margin: "0 auto",
       lineHeight: 1.75,
@@ -1076,7 +1076,7 @@ export default function Eeshavana() {
                 >
                   <img
                     src="/assets/project-images/Esahavana/masterplan.webp"
-                    alt="Eeshavana Concept Master Plan Layout"
+                    alt="Ishavana Concept Master Plan Layout"
                     style={{
                       width: "100%",
                       height: "auto",
@@ -1109,7 +1109,7 @@ export default function Eeshavana() {
       letterSpacing: "0.5px",
     }}
   >
-    Eeshavana Masterplan – Work in Progress
+    Ishavana Masterplan – Work in Progress
   </p>
 
   <a
@@ -1130,7 +1130,7 @@ export default function Eeshavana() {
       textDecoration: "none",
     }}
   >
-    Eeshavana Gallery{" "}
+    Ishavana Gallery{" "}
     <ArrowUpRight size={18} strokeWidth={2} aria-hidden="true" />
   </a>
 </div>
@@ -1605,12 +1605,12 @@ export default function Eeshavana() {
               <div className="av-nearby-map-header">
                 <span className="dot" aria-hidden="true" />
                 <span style={{ fontSize: "0.82rem", fontWeight: 600, letterSpacing: "0.03em" }}>
-                  Eeshavana Location
+                  Ishavana Location
                 </span>
               </div>
 
               <iframe
-                title="Google Maps showing Eeshavana at Kollegala"
+                title="Google Maps showing Ishavana at Kollegala"
                 src="https://www.google.com/maps?q=12.1648,77.1082&z=12&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -1644,7 +1644,7 @@ export default function Eeshavana() {
                     <MapPin size={22} aria-hidden="true" />
                   </div>
                   <div>
-                    <strong>Eeshavana Riverfront</strong>
+                    <strong>Ishavana Riverfront</strong>
                     <span>Kollegala, Kaveri River Region, Karnataka</span>
                   </div>
                 </div>
@@ -1864,7 +1864,7 @@ export default function Eeshavana() {
                     color: "#183023",
                   }}
                 >
-                  Eeshavana at Kollegala
+                  Ishavana at Kollegala
                 </div>
                 <div
                   style={{
@@ -1948,7 +1948,7 @@ export default function Eeshavana() {
                   margin: "0 0 10px",
                 }}
               >
-                Enquire About Eeshavana.
+                Enquire About Ishavana.
               </h3>
 
               <p
@@ -2088,7 +2088,7 @@ export default function Eeshavana() {
                   id="cta-project"
                   name="project"
                   required
-                  defaultValue="Eeshavana (Kaveri Riverfront)"
+                  defaultValue="Ishavana (Kaveri Riverfront)"
                   style={{
                     width: "100%",
                     minHeight: "52px",
@@ -2127,8 +2127,8 @@ export default function Eeshavana() {
                   <option value="Anantavana (Kabini · 34 Acres)">
                     Anantavana (Kabini · 34 Acres)
                   </option>
-                  <option value="Eeshavana (Kaveri Riverfront)">
-                    Eeshavana (Kaveri Riverfront)
+                  <option value="Ishavana (Kaveri Riverfront)">
+                    Ishavana (Kaveri Riverfront)
                   </option>
                 </select>
               </motion.div>
@@ -2162,7 +2162,7 @@ export default function Eeshavana() {
                 cursor: "pointer",
               }}
             >
-              Request Eeshavana Details
+              Request Ishavana Details
               <ArrowRight className="size-5" />
             </motion.button>
 
@@ -2181,7 +2181,7 @@ export default function Eeshavana() {
         </div>
       </section>
 
-      {/* Premium FAQ Section — Eeshavana */}
+      {/* Premium FAQ Section — Ishavana */}
       <section
         id="faq-section"
         style={{
@@ -2264,7 +2264,7 @@ export default function Eeshavana() {
                   fontWeight: 400,
                 }}
               >
-                About Eeshavana
+                About Ishavana
               </span>
             </h2>
           </motion.div>
@@ -2276,7 +2276,7 @@ export default function Eeshavana() {
             {[
               {
                 number: "01",
-                question: "Where is Eeshavana located?",
+                question: "Where is Ishavana located?",
                 answer: (
                   <>
                     Kollegala, Karnataka
@@ -2299,14 +2299,14 @@ export default function Eeshavana() {
               },
               {
                 number: "02",
-                question: "What is Eeshavana at Kollegala?",
+                question: "What is Ishavana at Kollegala?",
                 answer:
-                  "Eeshavana is a premium riverfront farm community by Vanatvam, set along the banks of the Kaveri River near Kollegala. It is envisioned as a low-density retreat that brings together private farm plots, planned common spaces, bio-pool, and direct Kaveri frontage for those seeking a quiet escape in nature.",
+                  "Ishavana is a premium riverfront farm community by Vanatvam, set along the banks of the Kaveri River near Kollegala. It is envisioned as a low-density retreat that brings together private farm plots, planned common spaces, bio-pool, and direct Kaveri frontage for those seeking a quiet escape in nature.",
               },
           
 {
   number: "03",
-  question: "What are the available plot sizes at Eeshavana?",
+  question: "What are the available plot sizes at Ishavana?",
   answer: (
     <span>
       Plot sizes at Ishavana start from{" "}
@@ -2318,14 +2318,14 @@ export default function Eeshavana() {
 
               {
                 number: "04",
-                question: "What amenities are planned in Eeshavana?",
+                question: "What amenities are planned in Ishavana?",
                 answer:
                   "Proposed amenities include a natural bio-pool, temple, gardens and landscape, Goushala, Yoga / Meditation deck, children's play area, amphitheatre, riverside dining spaces, car parking, and internal roads.",
               },
               {
                 number: "05",
                 question:
-                  "Can I build a farmhouse on my plot in Eeshavana?",
+                  "Can I build a farmhouse on my plot in Ishavana?",
                 answer:
                   "Building permissions and farmhouse construction depend on local land-use guidelines, river buffer norms, and Karnataka agricultural land regulations. Consult our project team and legal advisor for detailed guidance.",
               },
@@ -2422,16 +2422,16 @@ export default function Eeshavana() {
       <BrochureModal
         isOpen={isBrochureOpen}
         onClose={() => setIsBrochureOpen(false)}
-        projectName="Eeshavana"
+        projectName="Ishavana"
         brochureUrl="/assets/project-images/Eeshavana%20Brochure.pdf"
       />
 
       <Footer />
 
       <style jsx>{`
-        .eeshavana-page {
-          --eeshavana-forest: #122217;
-          --eeshavana-muted: #687b63;
+        .ishavana-page {
+          --ishavana-forest: #122217;
+          --ishavana-muted: #687b63;
           color: var(--text-dark);
           overflow: clip;
           background: #f9f8f6;
@@ -2441,7 +2441,7 @@ export default function Eeshavana() {
           padding: clamp(72px, 9vw, 120px) max(24px, calc((100vw - 1320px) / 2));
         }
 
-        .eeshavana-stats {
+        .ishavana-stats {
           position: relative;
           z-index: 2;
           width: min(1180px, calc(100% - 48px));
@@ -2453,12 +2453,12 @@ export default function Eeshavana() {
           box-shadow: 0 22px 60px rgba(18, 34, 23, 0.1);
         }
 
-        .eeshavana-stats-grid {
+        .ishavana-stats-grid {
           display: grid;
           grid-template-columns: repeat(4, minmax(0, 1fr));
         }
 
-        .eeshavana-stat {
+        .ishavana-stat {
           min-height: 105px;
           display: flex;
           flex-direction: column;
@@ -2468,19 +2468,19 @@ export default function Eeshavana() {
           text-align: center;
         }
 
-        .eeshavana-stats-grid > *:last-child .eeshavana-stat {
+        .ishavana-stats-grid > *:last-child .ishavana-stat {
           border-right: 0;
         }
 
-        .eeshavana-stat-value {
+        .ishavana-stat-value {
           margin: 0;
-          color: var(--eeshavana-forest);
+          color: var(--ishavana-forest);
           font-family: var(--font-serif);
           font-size: clamp(1.5rem, 2.5vw, 2rem);
           line-height: 1.1;
         }
 
-        .eeshavana-stat-value span {
+        .ishavana-stat-value span {
           color: var(--accent-gold);
           font-family: var(--font-sans);
           font-size: 0.72rem;
@@ -2489,13 +2489,13 @@ export default function Eeshavana() {
           text-transform: uppercase;
         }
 
-        .eeshavana-stat-label {
+        .ishavana-stat-label {
           margin: 7px 0 0;
-          color: var(--eeshavana-muted);
+          color: var(--ishavana-muted);
           font-size: 0.82rem;
         }
 
-        .eeshavana-idea {
+        .ishavana-idea {
           display: grid;
           grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
           align-items: center;
@@ -2503,12 +2503,12 @@ export default function Eeshavana() {
           width: 100%;
         }
 
-        .eeshavana-idea-copy {
+        .ishavana-idea-copy {
           width: 100%;
           max-width: 100%;
         }
 
-        .eeshavana-idea-image-wrap {
+        .ishavana-idea-image-wrap {
           position: relative;
           min-height: 420px;
           overflow: hidden;
@@ -2517,7 +2517,7 @@ export default function Eeshavana() {
           box-shadow: 0 25px 60px rgba(18, 34, 23, 0.12);
         }
 
-        .eeshavana-idea-image-wrap img {
+        .ishavana-idea-image-wrap img {
           position: absolute;
           inset: 0;
           width: 100%;
@@ -2525,7 +2525,7 @@ export default function Eeshavana() {
           object-fit: cover;
         }
 
-        .eeshavana-image-caption {
+        .ishavana-image-caption {
           position: absolute;
           bottom: 18px;
           left: 18px;
@@ -2539,40 +2539,40 @@ export default function Eeshavana() {
           z-index: 2;
         }
 
-        .eeshavana-pills {
+        .ishavana-pills {
           display: flex;
           flex-wrap: wrap;
           gap: 10px;
           margin-top: 26px;
         }
 
-        .eeshavana-pill {
+        .ishavana-pill {
           display: inline-flex;
           padding: 10px 15px;
           border: 1px solid rgba(18, 34, 23, 0.12);
           border-radius: 99px;
-          color: var(--eeshavana-forest);
+          color: var(--ishavana-forest);
           background: rgba(255, 255, 255, 0.66);
           font-size: 0.82rem;
         }
 
-        .eeshavana-overview {
+        .ishavana-overview {
           background: #f0eee7;
           position: relative;
         }
 
-        .eeshavana-overview-grid {
+        .ishavana-overview-grid {
           display: grid;
           grid-template-columns: repeat(3, minmax(0, 1fr));
           gap: 24px;
         }
 
-        .eeshavana-card-indicator {
+        .ishavana-card-indicator {
           opacity: 0;
           transition: opacity 0.3s ease;
         }
 
-        .eeshavana-overview-card {
+        .ishavana-overview-card {
           position: relative;
           min-height: 310px;
           display: flex;
@@ -2587,14 +2587,14 @@ export default function Eeshavana() {
           will-change: transform;
         }
 
-        .eeshavana-overview-card-header {
+        .ishavana-overview-card-header {
           display: flex;
           align-items: center;
           justify-content: space-between;
           margin-bottom: 24px;
         }
 
-        .eeshavana-overview-number {
+        .ishavana-overview-number {
           color: var(--accent-gold);
           font-family: var(--font-serif);
           font-size: 2.2rem;
@@ -2602,20 +2602,20 @@ export default function Eeshavana() {
           font-weight: 400;
         }
 
-        .eeshavana-overview-eyebrow {
+        .ishavana-overview-eyebrow {
           padding: 5px 12px;
           border-radius: 99px;
           background: rgba(18, 34, 23, 0.04);
-          color: var(--eeshavana-muted);
+          color: var(--ishavana-muted);
           font-size: 0.7rem;
           font-weight: 600;
           letter-spacing: 0.16em;
           text-transform: uppercase;
         }
 
-        .eeshavana-overview-card h3 {
+        .ishavana-overview-card h3 {
           margin: 0 0 12px;
-          color: var(--eeshavana-forest);
+          color: var(--ishavana-forest);
           font-family: var(--font-serif);
           font-size: 1.6rem;
           font-weight: 500;
@@ -2623,7 +2623,7 @@ export default function Eeshavana() {
           line-height: 1.25;
         }
 
-        .eeshavana-overview-card p {
+        .ishavana-overview-card p {
           margin: 0;
           color: #606b60;
           font-size: 0.95rem;
@@ -2632,7 +2632,7 @@ export default function Eeshavana() {
         }
 
         /* Subtle bottom accent line that grounds the card */
-        .eeshavana-card-indicator {
+        .ishavana-card-indicator {
           position: absolute;
           bottom: 0;
           left: 0;
@@ -2648,33 +2648,33 @@ export default function Eeshavana() {
           transition: opacity 0.3s ease;
         }
 
-        .eeshavana-overview-card:hover .eeshavana-card-indicator {
+        .ishavana-overview-card:hover .ishavana-card-indicator {
           opacity: 1;
         }
 
         @media (max-width: 900px) {
-          .eeshavana-overview-grid {
+          .ishavana-overview-grid {
             grid-template-columns: 1fr;
             gap: 18px;
           }
 
-          .eeshavana-overview-card {
+          .ishavana-overview-card {
             min-height: 0 !important;
             padding: 28px 24px !important;
           }
         }
 
-        .eeshavana-plan {
+        .ishavana-plan {
           background: #fff;
         }
 
-        .eeshavana-amenities-grid {
+        .ishavana-amenities-grid {
           display: grid;
           grid-template-columns: repeat(4, minmax(0, 1fr));
           gap: 24px;
         }
 
-        .eeshavana-amenity-card {
+        .ishavana-amenity-card {
           overflow: hidden;
           border: 1px solid rgba(0, 0, 0, 0.04);
           border-radius: 24px;
@@ -2682,14 +2682,14 @@ export default function Eeshavana() {
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
 
-        .eeshavana-amenity-image-wrap {
+        .ishavana-amenity-image-wrap {
           position: relative;
           width: 100%;
           height: 180px;
           overflow: hidden;
         }
 
-        .eeshavana-amenity-image {
+        .ishavana-amenity-image {
           display: block;
           width: 100%;
           height: 100%;
@@ -2697,41 +2697,41 @@ export default function Eeshavana() {
           transition: transform 700ms cubic-bezier(0.2, 0.9, 0.2, 1);
         }
 
-        .eeshavana-amenity-card:hover .eeshavana-amenity-image {
+        .ishavana-amenity-card:hover .ishavana-amenity-image {
           transform: scale(1.06);
         }
 
-        .eeshavana-amenity-card-content {
+        .ishavana-amenity-card-content {
           padding: 24px;
         }
 
-        .eeshavana-amenity-card h3 {
+        .ishavana-amenity-card h3 {
           margin: 0 0 12px;
-          color: var(--eeshavana-forest);
+          color: var(--ishavana-forest);
           font-family: var(--font-serif);
           font-size: 1.35rem;
           font-weight: 500;
           line-height: 1.25;
         }
 
-        .eeshavana-amenity-card p {
+        .ishavana-amenity-card p {
           margin: 0;
-          color: var(--eeshavana-muted);
+          color: var(--ishavana-muted);
           font-size: 0.95rem;
           line-height: 1.6;
         }
 
-        .eeshavana-gallery {
+        .ishavana-gallery {
           background: #f0eee7;
         }
 
-        .eeshavana-gallery-grid {
+        .ishavana-gallery-grid {
           display: grid;
           grid-template-columns: 1.15fr 0.85fr 1fr;
           gap: 18px;
         }
 
-        .eeshavana-gallery-image {
+        .ishavana-gallery-image {
           height: 300px;
           overflow: hidden;
           margin: 0;
@@ -2739,7 +2739,7 @@ export default function Eeshavana() {
           background: #d8ddd3;
         }
 
-        .eeshavana-gallery-image img {
+        .ishavana-gallery-image img {
           width: 100%;
           height: 100%;
           object-object: cover;
@@ -2747,20 +2747,20 @@ export default function Eeshavana() {
           transition: transform 0.7s ease;
         }
 
-        .eeshavana-gallery-image:hover img {
+        .ishavana-gallery-image:hover img {
           transform: scale(1.04);
         }
 
-        .eeshavana-cta {
+        .ishavana-cta {
           padding: clamp(80px, 10vw, 130px) 24px;
           color: #fff;
-          background: var(--eeshavana-forest);
+          background: var(--ishavana-forest);
           text-align: center;
           position: relative;
           overflow: hidden;
         }
 
-        .eeshavana-cta p {
+        .ishavana-cta p {
           max-width: 620px;
           margin: 0 auto 28px;
           color: rgba(255, 255, 255, 0.74);
@@ -2769,83 +2769,83 @@ export default function Eeshavana() {
         }
 
         @media (max-width: 900px) {
-          .eeshavana-idea {
+          .ishavana-idea {
             grid-template-columns: 1fr;
           }
 
-          .eeshavana-idea-image-wrap {
+          .ishavana-idea-image-wrap {
             min-height: 360px;
           }
 
-          .eeshavana-amenities-grid {
+          .ishavana-amenities-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
         }
 
         @media (max-width: 700px) {
-          .eeshavana-stats-grid {
+          .ishavana-stats-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
 
-          .eeshavana-stat:nth-child(2) {
+          .ishavana-stat:nth-child(2) {
             border-right: 0;
           }
 
-          .eeshavana-stat:nth-child(-n + 2) {
+          .ishavana-stat:nth-child(-n + 2) {
             border-bottom: 1px solid rgba(18, 34, 23, 0.1);
           }
 
-          .eeshavana-overview-grid {
+          .ishavana-overview-grid {
             grid-template-columns: 1fr;
           }
 
-          .eeshavana-overview-card {
+          .ishavana-overview-card {
             min-height: 290px;
           }
 
-          .eeshavana-overview-number {
+          .ishavana-overview-number {
             margin-bottom: 32px;
           }
 
-          .eeshavana-gallery-grid {
+          .ishavana-gallery-grid {
             grid-template-columns: 1fr;
           }
 
-          .eeshavana-gallery-image {
+          .ishavana-gallery-image {
             height: 260px;
           }
         }
 
         @media (max-width: 520px) {
-          .eeshavana-stats {
+          .ishavana-stats {
             width: calc(100% - 32px);
             padding: 10px;
           }
 
-          .eeshavana-stat {
+          .ishavana-stat {
             min-height: 94px;
             padding: 12px 7px;
           }
 
-          .eeshavana-stat-value {
+          .ishavana-stat-value {
             font-size: 1.35rem;
           }
 
-          .eeshavana-stat-label {
+          .ishavana-stat-label {
             font-size: 0.72rem;
           }
 
-          .eeshavana-amenities-grid {
+          .ishavana-amenities-grid {
             grid-template-columns: 1fr;
           }
 
-          .eeshavana-amenity-image-wrap {
+          .ishavana-amenity-image-wrap {
             height: 200px;
           }
         }
 
         @media (prefers-reduced-motion: reduce) {
-          .eeshavana-amenity-image {
+          .ishavana-amenity-image {
             transition: none;
           }
         }

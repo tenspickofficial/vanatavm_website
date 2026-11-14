@@ -770,8 +770,8 @@ export default function Contact() {
                           <option value="Anantavana (Kabini · 34 Acres)">
                             Anantavana (Kabini · 34 Acres)
                           </option>
-                          <option value="Eeshavana (Kaveri Riverfront)">
-                            Eeshavana (Kaveri Riverfront)
+                          <option value="Ishavana (Kaveri Riverfront)">
+                            Ishavana (Kaveri Riverfront)
                           </option>
                         </select>
                       </div>
@@ -927,7 +927,7 @@ export default function Contact() {
                   number: "03",
                   question: "How far are the project sites from Bengaluru?",
                   answer:
-                    "Madhuvana is ~80 km (Maddur), Anantavana is near Kabini (~210 km), Eeshavana is near Kollegala (~130 km), and Brindavana is near Pavagada (~150 km).",
+                    "Madhuvana is ~80 km (Maddur), Anantavana is near Kabini (~210 km), Ishavana is near Kollegala (~130 km), and Brindavana is near Pavagada (~150 km).",
                 },
                 {
                   number: "04",

@@ -501,7 +501,7 @@ export default function Brindavana() {
               width: "100%",
             }}
           >
-            <div className="eeshavana-idea" style={{ gap: "clamp(16px, 2.5vw, 32px)", width: "100%" }}>
+            <div className="ishavana-idea" style={{ gap: "clamp(16px, 2.5vw, 32px)", width: "100%" }}>
               <div style={{ position: "relative", width: "100%", maxWidth: "100%" }}>
                 <motion.div
                   initial={reduce ? false : { opacity: 0, y: 30 }}
@@ -523,7 +523,7 @@ export default function Brindavana() {
                     loading="lazy"
                     style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                   />
-                  <span className="eeshavana-image-caption">
+                  <span className="ishavana-image-caption">
                     The Brindavana idea
                   </span>
                 </motion.div>
@@ -571,7 +571,7 @@ export default function Brindavana() {
                   </span>
                 </motion.div>
               </div>
-              <div className="eeshavana-idea-copy">
+              <div className="ishavana-idea-copy">
                 <Kicker>The Brindavana Story</Kicker>
                 <Words
                   text="Brindavana — A Journey of Persistence"
@@ -630,14 +630,14 @@ export default function Brindavana() {
                   </Reveal>
                 </div>
 
-                <div className="eeshavana-pills" style={{ marginTop: "24px" }}>
+                <div className="ishavana-pills" style={{ marginTop: "24px" }}>
                   {[
                     "200+ Years Ancestral Heritage",
                     "20 Years of Persistence",
                     "Ecological Restoration",
                   ].map((item, index) => (
                     <Reveal key={item} delay={0.12 + index * 0.06}>
-                      <span className="eeshavana-pill">{item}</span>
+                      <span className="ishavana-pill">{item}</span>
                     </Reveal>
                   ))}
                 </div>
@@ -2012,8 +2012,8 @@ export default function Brindavana() {
                     <option value="Anantavana (Kabini · 34 Acres)">
                       Anantavana (Kabini · 34 Acres)
                     </option>
-                    <option value="Eeshavana (Kaveri Riverfront)">
-                      Eeshavana (Kaveri Riverfront)
+                    <option value="Ishavana (Kaveri Riverfront)">
+                      Ishavana (Kaveri Riverfront)
                     </option>
                   </select>
                 </motion.div>
@@ -2313,14 +2313,14 @@ export default function Brindavana() {
 
       <style jsx>{`
         .brindavana-page {
-          --eeshavana-forest: #122217;
-          --eeshavana-muted: #687b63;
+          --ishavana-forest: #122217;
+          --ishavana-muted: #687b63;
           color: var(--text-dark);
           overflow: hidden;
           background: #f9f8f6;
         }
 
-        .eeshavana-idea {
+        .ishavana-idea {
           display: grid;
           grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
           align-items: center;
@@ -2328,12 +2328,12 @@ export default function Brindavana() {
           width: 100%;
         }
 
-        .eeshavana-idea-copy {
+        .ishavana-idea-copy {
           width: 100%;
           max-width: 100%;
         }
 
-        .eeshavana-idea-image-wrap {
+        .ishavana-idea-image-wrap {
           position: relative;
           min-height: 420px;
           overflow: hidden;
@@ -2342,7 +2342,7 @@ export default function Brindavana() {
           box-shadow: 0 25px 60px rgba(18, 34, 23, 0.12);
         }
 
-        .eeshavana-idea-image-wrap img {
+        .ishavana-idea-image-wrap img {
           position: absolute;
           inset: 0;
           width: 100%;
@@ -2350,7 +2350,7 @@ export default function Brindavana() {
           object-fit: cover;
         }
 
-        .eeshavana-image-caption {
+        .ishavana-image-caption {
           position: absolute;
           bottom: 18px;
           left: 18px;
@@ -2364,29 +2364,29 @@ export default function Brindavana() {
           z-index: 2;
         }
 
-        .eeshavana-pills {
+        .ishavana-pills {
           display: flex;
           flex-wrap: wrap;
           gap: 10px;
           margin-top: 26px;
         }
 
-        .eeshavana-pill {
+        .ishavana-pill {
           display: inline-flex;
           padding: 10px 15px;
           border: 1px solid rgba(18, 34, 23, 0.12);
           border-radius: 99px;
-          color: var(--eeshavana-forest);
+          color: var(--ishavana-forest);
           background: rgba(255, 255, 255, 0.66);
           font-size: 0.82rem;
         }
 
         @media (max-width: 900px) {
-          .eeshavana-idea {
+          .ishavana-idea {
             grid-template-columns: 1fr;
           }
 
-          .eeshavana-idea-image-wrap {
+          .ishavana-idea-image-wrap {
             min-height: 360px;
           }
         }

@@ -19,7 +19,7 @@ const PROJECT_LINKS: NavChild[] = [
   { label: "Brindavana", href: "/brindavana" },
   { label: "Madhuvana", href: "/madhuvana" },
   { label: "Anantavana", href: "/anantavana" },
-  { label: "Eeshavana", href: "/eeshavana" },
+  { label: "Ishavana", href: "/ishavana" },
 ];
 
 const NAV: NavItem[] = [

@@ -114,8 +114,8 @@ const lifeAtVanatvamPolaroids: PolaroidItem[] = [
 
 const heroSlides = [
   {
-    id: "eeshavana",
-    name: "EESHAVANA",
+    id: "ishavana",
+    name: "ISHAVANA",
     
     tagline: "A premium riverfront community on the sacred Kaveri.",
     img: "/assets/project-images/Esahavana/EV.webp",
@@ -713,7 +713,7 @@ WHO WE ARE
           {
             num: "01 / Strategic Locations",
             title: "Along the Bangalore–Mysore Corridor",
-            desc: "Located amidst stunning natural settings in MadhuVana (Near Maddur), AnantaVana (Near Kabini), Eeshavana (Near Shivanasamudhra on the bank of River Kaveri), and BrindaVana (where it all began). Places worth visiting, not just owning, selected only after rigorous due diligence.",
+            desc: "Located amidst stunning natural settings in MadhuVana (Near Maddur), AnantaVana (Near Kabini), Ishavana (Near Shivanasamudhra on the bank of River Kaveri), and BrindaVana (where it all began). Places worth visiting, not just owning, selected only after rigorous due diligence.",
           },
           {
             num: "02 / Biodiversity by Design",
@@ -1038,8 +1038,8 @@ WHO WE ARE
                    
                 },
                 {
-                  id: "eeshavana",
-                  name: "EESHAVANA",
+                  id: "ishavana",
+                  name: "ISHAVANA",
                   badge: "KOLLEGALA ·10 Acres",
                   img: "/assets/project-images/Esahavana/EV.webp",
                    
@@ -2157,8 +2157,8 @@ By bringing together ecological restoration, India’s cultural heritage, and th
                   <option value="Anantavana (Kabini · 34 Acres)">
                     Anantavana (Kabini · 34 Acres)
                   </option>
-                  <option value="Eeshavana (Kaveri Riverfront)">
-                    Eeshavana (Kaveri Riverfront)
+                  <option value="Ishavana (Kaveri Riverfront)">
+                    Ishavana (Kaveri Riverfront)
                   </option>
                 </select>
               </motion.div>

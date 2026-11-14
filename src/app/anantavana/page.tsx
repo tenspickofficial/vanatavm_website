@@ -2396,8 +2396,8 @@ export default function Anantavana() {
                   <option value="Anantavana (Kabini · 34 Acres)">
                     Anantavana (Kabini · 34 Acres)
                   </option>
-                  <option value="Eeshavana (Kaveri Riverfront)">
-                    Eeshavana (Kaveri Riverfront)
+                  <option value="Ishavana (Kaveri Riverfront)">
+                    Ishavana (Kaveri Riverfront)
                   </option>
                 </select>
               </motion.div>

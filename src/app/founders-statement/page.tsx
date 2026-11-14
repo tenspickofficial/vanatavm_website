@@ -214,9 +214,9 @@ const PROJECTS = [
     pills: ["Bandipur Corridor", "Heritage Cottages"],
   },
   {
-    id: "eeshavana",
+    id: "ishavana",
     category: "riverfront",
-    name: "EESHAVANA",
+    name: "ISHAVANA",
     logo: "/assets/images/Project-Logos/eeshavanaalogo.webp",
     location: "KOLLEGALA · CAUVERY RIVERFRONT",
     desc: "A riverfront community along the sacred Kaveri, designed around the relationship between people, riparian ecology, and water.",

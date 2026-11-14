@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/brindavana',
     '/madhuvana',
     '/anantavana',
-    '/eeshavana',
+    '/ishavana',
     '/privacy-policy',
     '/terms',
     '/blog/redefining-farmland-ownership',

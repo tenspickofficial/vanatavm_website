@@ -518,7 +518,7 @@ export default function Madhuvana() {
               width: "100%",
             }}
           >
-            <div className="eeshavana-idea" style={{ gap: "clamp(16px, 2.5vw, 32px)", width: "100%" }}>
+            <div className="ishavana-idea" style={{ gap: "clamp(16px, 2.5vw, 32px)", width: "100%" }}>
               <div style={{ position: "relative", width: "100%", maxWidth: "100%" }}>
                 <motion.div
                   initial={reduce ? false : { opacity: 0, y: 30 }}
@@ -540,7 +540,7 @@ export default function Madhuvana() {
                     loading="lazy"
                     style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                   />
-                  <span className="eeshavana-image-caption">
+                  <span className="ishavana-image-caption">
                     The MadhuVana idea
                   </span>
                 </motion.div>
@@ -588,7 +588,7 @@ export default function Madhuvana() {
                   </span>
                 </motion.div>
               </div>
-              <div className="eeshavana-idea-copy">
+              <div className="ishavana-idea-copy">
                 <Kicker>The MadhuVana idea</Kicker>
                 <Words
                   text="Ancient forest wisdom meets modern living."
@@ -626,14 +626,14 @@ export default function Madhuvana() {
                     </p>
                   </Reveal>
                 </div>
-                <div className="eeshavana-pills">
+                <div className="ishavana-pills">
                   {[
                     "17-Acre Natural Farm Community",
                     "Sacred Vanas & Herbal Gardens",
                     "Near Bangalore-Mysore Highway",
                   ].map((item, index) => (
                     <Reveal key={item} delay={0.12 + index * 0.06}>
-                      <span className="eeshavana-pill">{item}</span>
+                      <span className="ishavana-pill">{item}</span>
                     </Reveal>
                   ))}
                 </div>
@@ -986,7 +986,7 @@ export default function Madhuvana() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 style={{
                   fontSize: "clamp(1rem, 1.1vw, 1.1rem)",
-                  color: "var(--eeshavana-muted, #687b63)",
+                  color: "var(--ishavana-muted, #687b63)",
                   lineHeight: 1.75,
                   maxWidth: "720px",
                   margin: "0 auto",
@@ -2056,8 +2056,8 @@ export default function Madhuvana() {
                     <option value="Anantavana (Kabini · 34 Acres)">
                       Anantavana (Kabini · 34 Acres)
                     </option>
-                    <option value="Eeshavana (Kaveri Riverfront)">
-                      Eeshavana (Kaveri Riverfront)
+                    <option value="Ishavana (Kaveri Riverfront)">
+                      Ishavana (Kaveri Riverfront)
                     </option>
                   </select>
                 </motion.div>
@@ -2360,14 +2360,14 @@ export default function Madhuvana() {
 
       <style jsx>{`
         .madhuvana-page {
-          --eeshavana-forest: #122217;
-          --eeshavana-muted: #687b63;
+          --ishavana-forest: #122217;
+          --ishavana-muted: #687b63;
           color: var(--text-dark);
           overflow: clip;
           background: #f9f8f6;
         }
 
-        .eeshavana-idea {
+        .ishavana-idea {
           display: grid;
           grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
           align-items: center;
@@ -2375,12 +2375,12 @@ export default function Madhuvana() {
           width: 100%;
         }
 
-        .eeshavana-idea-copy {
+        .ishavana-idea-copy {
           width: 100%;
           max-width: 100%;
         }
 
-        .eeshavana-idea-image-wrap {
+        .ishavana-idea-image-wrap {
           position: relative;
           min-height: 420px;
           overflow: hidden;
@@ -2389,7 +2389,7 @@ export default function Madhuvana() {
           box-shadow: 0 25px 60px rgba(18, 34, 23, 0.12);
         }
 
-        .eeshavana-idea-image-wrap img {
+        .ishavana-idea-image-wrap img {
           position: absolute;
           inset: 0;
           width: 100%;
@@ -2397,7 +2397,7 @@ export default function Madhuvana() {
           object-fit: cover;
         }
 
-        .eeshavana-image-caption {
+        .ishavana-image-caption {
           position: absolute;
           bottom: 18px;
           left: 18px;
@@ -2411,29 +2411,29 @@ export default function Madhuvana() {
           z-index: 2;
         }
 
-        .eeshavana-pills {
+        .ishavana-pills {
           display: flex;
           flex-wrap: wrap;
           gap: 10px;
           margin-top: 26px;
         }
 
-        .eeshavana-pill {
+        .ishavana-pill {
           display: inline-flex;
           padding: 10px 15px;
           border: 1px solid rgba(18, 34, 23, 0.12);
           border-radius: 99px;
-          color: var(--eeshavana-forest);
+          color: var(--ishavana-forest);
           background: rgba(255, 255, 255, 0.66);
           font-size: 0.82rem;
         }
 
         @media (max-width: 900px) {
-          .eeshavana-idea {
+          .ishavana-idea {
             grid-template-columns: 1fr;
           }
 
-          .eeshavana-idea-image-wrap {
+          .ishavana-idea-image-wrap {
             min-height: 360px;
           }
         }

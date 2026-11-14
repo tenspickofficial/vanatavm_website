@@ -9,14 +9,14 @@ export const metadata: Metadata = {
     default: "Vanatvam | Sustainable Managed Farmland & Nature Communities",
     template: "%s |VanaTvam"
   },
-  description: "Vanatvam creates sustainable managed farmland, native forest ecosystems, and nature communities across Karnataka & near Bangalore. Discover Brindavana, Madhuvana, Anantavana, and Eeshavana.",
+  description: "Vanatvam creates sustainable managed farmland, native forest ecosystems, and nature communities across Karnataka & near Bangalore. Discover Brindavana, Madhuvana, Anantavana, and Ishavana.",
   keywords: [
     "Managed Farmland Bangalore", "Managed Farmland Karnataka", "Sustainable Farmland Karnataka",
     "Farm Plots Near Bangalore", "Agricultural Land Investment Karnataka", "Eco Friendly Farm Communities",
     "Nakshatra Vana Forest", "Navagraha Vana", "Natural Sustainable Farm Communities",
     "Farmland Investment Karnataka", "Biodiversity Restoration Karnataka", "Native Forest Restoration Karnataka",
     "Nature Communities Bangalore", "Weekend Farm Near Bangalore", "Farmhouse Plots Karnataka",
-    "Brindavana Pavagada", "Madhuvana Maddur", "Anantavana Kabini", "Eeshavana Kaveri Riverfront",
+    "Brindavana Pavagada", "Madhuvana Maddur", "Anantavana Kabini", "Ishavana Kaveri Riverfront",
   ],
   authors: [{ name: "Vanatvam Private Limited" }],
   openGraph: {

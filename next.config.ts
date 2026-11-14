@@ -25,6 +25,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/eeshavana",
+        destination: "/ishavana",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
